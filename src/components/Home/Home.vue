@@ -3,7 +3,7 @@
     <div style="width:1200px;margin:20px auto; ">
       <el-carousel indicator-position="outside" arrow="always" height="500px">
         <el-carousel-item v-for="item in lunboImgs" :key="item.id">
-          <img :src="item.imgSrc" alt />
+          <img :src="item.metavalue" alt />
         </el-carousel-item>
       </el-carousel>
     </div>
@@ -22,22 +22,22 @@ export default {
       lunboImgs: [
         {
           id: 1,
-          imgSrc:
+          metavalue:
             "http://picture1.yidianchina.com/assets/upload/image/d426850409a28496d9fd486166a7445d.jpg"
         },
         {
           id: 2,
-          imgSrc:
+          metavalue:
             "http://picture1.yidianchina.com/assets/upload/image/92e2ee2bcbc869ad7c986a5d896fa1aa.jpg"
         },
         {
           id: 3,
-          imgSrc:
+          metavalue:
             "http://picture1.yidianchina.com/assets/upload/product/9cda594561df839876a2e61667a992db.jpg"
         },
         {
           id: 4,
-          imgSrc:
+          metavalue:
             "http://picture1.yidianchina.com/assets/upload/image/c1974be488d8a8976f2f7e1c3c66140b.jpg"
         }
       ]
@@ -45,6 +45,21 @@ export default {
   },
   created() {
     // 获取首页轮播
+    this.getBannerList();
+  },
+  methods: {
+    getBannerList() {
+      this.$https
+        .getBannerList()
+        .then(res => {
+          if (!res.error_no) {
+            this.lunboImgs = res.data;
+          }
+        })
+        .catch(err => {
+          console.log(err);
+        });
+    }
   }
 };
 </script>
