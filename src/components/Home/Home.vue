@@ -44,7 +44,7 @@ export default {
     };
   },
   created() {
-    // console.log(localStorage);
+    // 获取首页轮播
   }
 };
 </script>
