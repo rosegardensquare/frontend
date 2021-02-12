@@ -5,7 +5,8 @@
       <div class="header">
         <div class="nav-left">
           <img
-            src="https://hcdn2.luffycity.com/media/frontend/activity/head-logo_1564141048.3435316.svg"
+            style="height:100%;width:100%"
+            src="https://backend-frontend.oss-cn-beijing.aliyuncs.com/微信截图_20210212225105.png"
             alt
           />
         </div>
@@ -71,9 +72,10 @@ export default {
     return {
       headerList: [
         { id: "1", name: "Home", title: "首页" },
-        { id: "2", name: "Course", title: "免费课程" },
-        { id: "3", name: "LightCourse", title: "轻课" },
-        { id: "4", name: "Micro", title: "学位课程" }
+        { id: "2", name: "Photo", title: "赏图" },
+        { id: "3", name: "Music", title: "音乐" },
+        { id: "4", name: "Video", title: "视频" },
+        { id: "5", name: "Shop", title: "商城" }
       ],
       isLogin: false
     };
@@ -100,7 +102,9 @@ export default {
 }
 .nav-left {
   float: left;
-  margin-top: 10px;
+  margin-top: 15px;
+  width: 94px;
+  height: 57px;
 }
 .nav-center {
   float: left;

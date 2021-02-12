@@ -40,7 +40,7 @@ export default {
   height: 128px;
   background: #25292e;
 
-  position: fixed;
+  /* position: fixed; */
   left: 0px;
   bottom: 0px;
   z-index: 9999;

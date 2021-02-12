@@ -23,8 +23,8 @@ Vue.component(Footer.name, Footer)
 import Home from '@/components/Home/Home'
 Vue.component(Home.name, Home)
 
-import Course from '@/components/Course/Course'
-Vue.component(Course.name, Course)
+import Photo from '@/components/Photo/Photo'
+Vue.component(Photo.name, Photo)
 
 import * as api from './restful/api'
 

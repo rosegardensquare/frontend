@@ -1,13 +1,11 @@
 <template>
   <div id="app">
-    <div style="margin-top: 30px;">
+    <div>
       <FrontendHeader></FrontendHeader>
     </div>
     <GoTop>111111111111111111111111111111111111111</GoTop>
     <router-view />
-    <div style="margin-top: 30px;">
-      <Footer></Footer>
-    </div>
+    <Footer></Footer>
   </div>
 </template>
 

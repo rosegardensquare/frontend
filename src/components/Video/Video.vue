@@ -2,7 +2,7 @@
 
 <script>
 export default {
-  name: "LightCourse"
+  name: "Video"
 };
 </script>
 

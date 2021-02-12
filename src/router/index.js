@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home/Home'
-import Course from '@/components/Course/Course'
-import LightCourse from '@/components/LightCourse/LightCourse'
-import Micro from '@/components/Micro/Micro'
+import Photo from '@/components/Photo/Photo'
+import Video from '@/components/Video/Video'
+import Shop from '@/components/Shop/Shop'
+import Music from '@/components/Music/Music'
 
 
 Vue.use(Router)
@@ -22,19 +23,24 @@ export default new Router({
       component: Home
     },
     {
-      path: '/Course',
-      name: 'Course',
-      component: Course
+      path: '/Photo',
+      name: 'Photo',
+      component: Photo
     },
     {
-      path: '/LightCourse',
-      name: 'LightCourse',
-      component: LightCourse
+      path: '/Video',
+      name: 'Video',
+      component: Video
     },
     {
-      path: '/Micro',
-      name: 'Micro',
-      component: Micro
+      path: '/Shop',
+      name: 'Shop',
+      component: Shop
+    },
+    {
+      path: '/Music',
+      name: 'Music',
+      component: Music
     }
   ]
 })
