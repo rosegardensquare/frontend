@@ -72,7 +72,7 @@ export default {
     return {
       headerList: [
         { id: "1", name: "Home", title: "首页" },
-        { id: "2", name: "Photo", title: "赏图" },
+        { id: "2", name: "Photo", title: "图片" },
         { id: "3", name: "Music", title: "音乐" },
         { id: "4", name: "Video", title: "视频" },
         { id: "5", name: "Shop", title: "商城" }
@@ -138,7 +138,6 @@ export default {
 .nav-right {
   float: right;
   position: relative;
-  z-index: 100;
 }
 .nav-right span {
   cursor: pointer;

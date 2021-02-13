@@ -1,11 +1,13 @@
 <template>
   <div id="app">
-    <div>
+    <div class="header_class">
       <FrontendHeader></FrontendHeader>
     </div>
-    <GoTop>111111111111111111111111111111111111111</GoTop>
-    <router-view />
-    <Footer></Footer>
+    <div style="margin-top:100px;">
+      <GoTop>111111111111111111111111111111111111111</GoTop>
+      <router-view />
+      <Footer></Footer>
+    </div>
   </div>
 </template>
 
@@ -23,5 +25,12 @@ export default {
 };
 </script>
 
-<style>
+<style lang="css" scoped>
+.header_class {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 50;
+  background-color: rgb(255, 255, 255);
+}
 </style>

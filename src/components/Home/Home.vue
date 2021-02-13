@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div style="width:1200px;margin:20px auto; ">
+    <div style="width:1200px;margin:20px auto ; ">
       <el-carousel indicator-position="outside" arrow="always" height="500px">
         <el-carousel-item v-for="item in lunboImgs" :key="item.id">
           <img :src="item.metavalue" alt />
