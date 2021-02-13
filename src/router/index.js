@@ -5,7 +5,7 @@ import Photo from '@/components/Photo/Photo'
 import Video from '@/components/Video/Video'
 import Shop from '@/components/Shop/Shop'
 import Music from '@/components/Music/Music'
-
+import HomeModels from '@/components/Home/HomeModels'
 
 Vue.use(Router)
 
@@ -41,6 +41,11 @@ export default new Router({
       path: '/Music',
       name: 'Music',
       component: Music
+    },
+    {
+      path: '/HomeModels',
+      name: 'HomeModels',
+      component: HomeModels
     }
   ]
 })

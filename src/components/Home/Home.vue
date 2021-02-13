@@ -9,14 +9,19 @@
     </div>
 
     <div style="margin-top: 30px; height: 3000px;">
-      <Course></Course>
+      <HomeModels></HomeModels>
     </div>
   </div>
 </template>
 
 <script>
+import HomeModels from "@/components/Home/HomeModels";
+
 export default {
   name: "Home",
+  components: {
+    HomeModels
+  },
   data() {
     return {
       lunboImgs: [

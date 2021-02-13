@@ -1,52 +1,84 @@
 <template>
   <div class="course">
     <div class="container clearfix">
-      <ul class="coursebox">
-        <li
-          v-for="(category,index) in categoryList"
-          :key="category.id"
-          :class="{active:index===currentIndex}"
-          @click="categoryClick(index,category.id)"
-        >{{category.name}}</li>
-      </ul>
-
-      <div v-for="(course_detail,index) in courseDetail" :key="course_detail.id">
-        {{course_detail.name}}
         <ul class="coursebox">
-          <li v-for="(course,index) in course_detail.courses" :key="course.id">
+              
+          <li  >
             <div class="detail">
               <div class="head">
-                <img :src="course.course_img" alt />
-                <!-- <b class="mask" :style="{background:course.bgColor}"></b> -->
-                <!-- 在图片上加水印 -->
-                <!-- <p>{{course.name}}</p> -->
-              </div>
-              <div class="content">
-                <p>{{course.course_slogan}}</p>
-                <div class="content-detail">
-                  <div>
-                    <img src alt />
-                    <span>{{course.people_but}}</span>
-                    <span>{{course.level}}</span>
-                    <span class="span3" v-if="course.is_free">
-                      <span class="s">{{course.origin_price}}</span>
-                      <span class="t">免费</span>
-                    </span>
-                    <span class="span4" v-else>{{course.price}}</span>
-                  </div>
-                </div>
-              </div>
+                <img style="  border-radius:10px;" 
+                  src="https://backend-frontend.oss-cn-beijing.aliyuncs.com/2037482.jpg"
+                  alt
+                />
+              </div>        
+<div class="tip">
+<h2 class="tip-h" > 图片</h2>
+<span> - 全球优质图片应有尽有 - </span>
+</div>
+
+            </div>
+          </li>
+
+
+
+       
+          <li >
+            <div class="detail">
+              <div class="head">
+                <img style="  border-radius:10px;" 
+                  src="https://backend-frontend.oss-cn-beijing.aliyuncs.com/237224.jpg"
+                  alt
+                />
+              </div>        
+<div class="tip">
+<h2 class="tip-h" > 音乐</h2>
+<span> - 高品质音乐 - </span>
+</div>
+
+            </div>
+          </li>
+
+        
+          <li >
+            <div class="detail">
+              <div class="head">
+                <img style="  border-radius:10px;" 
+                  src="https://backend-frontend.oss-cn-beijing.aliyuncs.com/189279.jpg"
+                  alt
+                />
+              </div>        
+<div class="tip">
+<h2 class="tip-h" > 视频 </h2>
+<span> - 海量视频 - </span>
+</div>
+
+            </div>
+          </li>
+
+          <li >
+            <div class="detail">
+              <div class="head">
+                <img style="  border-radius:10px;" 
+                  src="https://backend-frontend.oss-cn-beijing.aliyuncs.com/287429.jpg"
+                  alt
+                />
+              </div>        
+<div class="tip">
+<h2 class="tip-h" > 商城</h2>
+<span> - 优质好物 - </span>
+</div>
+
             </div>
           </li>
         </ul>
       </div>
     </div>
   </div>
-</template>
+</template>+
 
 <script>
 export default {
-  name: "Photo",
+  name: "HomeModels",
   data() {
     return {
       categoryList: [], // 分类列表
@@ -113,24 +145,33 @@ export default {
   letter-spacing: 0.41px;
   font-family: PingFangSC-Regular;
   overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.coursebox li {
-  padding: 8px;
-}
+
 
 .coursebox li:hover {
   color: #e30011;
+  
 }
 .coursebox li.active {
   border-radius: 5%;
   border: 1px solid #e30011;
   color: #e30011;
 }
-ul li {
+
+ .coursebox li {
+     display:inline;
+     float:left;
+             
+}
+         
+/* ul li {
   float: left;
   margin-right: 24px;
   cursor: pointer;
-}
+} */
 
 ul li.active {
   color: #00b4e4;
@@ -141,35 +182,54 @@ ul li.active {
   overflow: hidden;
 }
 .detail {
-  width: 200px;
+  width: 500px;
   height: auto;
-  margin-right: 16px;
-  margin-bottom: 30px;
+  /* margin-right: 16px; */
+  margin-bottom: 144px;
   position: relative;
   padding: 0 20px;
   background: #fff;
   box-shadow: 0 2px 6px 0 #e8e8e8;
   transition: all 0.2s linear;
   cursor: pointer;
+  border-radius:4px;
 }
 .detail:hover {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
   transform: translate3d(0, -3px, 0);
+
 }
+
+.detail:hover >   .tip{
+    background: red;
+    color: #e8e8e8
+  }
+
+
+
+.detail:hover > .tip >.tip-h{
+    color: #e8e8e8; 
+}
+
+
 .detail:nth-of-type(4n) {
   margin-right: 0;
 }
 .head {
   width: 100%;
 
-  height: 144px;
+  height: 273px;
+
 }
 .detail .head img {
   width: 100%;
-  height: 144px;
+  /* height: 144px; */
   position: absolute;
   left: 0;
 }
+
+
+
 
 .detail .head b {
   width: 100%;
@@ -237,4 +297,30 @@ ul li.active {
   text-decoration: none !important;
   color: #fc0107;
 }
+
+.tip{
+    width:300px;
+    height:70px;
+    background:white;
+    bottom:-65px;
+    position:absolute;
+    left: 0;
+    right: 0;
+    margin-right:auto;
+    margin-left:auto;
+    margin:0 auto;
+    text-align: center;
+    box-shadow: 1px 1.5px 0 0 #ede5e5;
+
+}
+
+.tip-h{
+    vertical-align:middle;
+    color: #fc0107; 
+    margin-top: 5px
+}
+
+
+
+
 </style>
