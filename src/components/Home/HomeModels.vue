@@ -133,6 +133,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
 .course {
   width: 100%;
   height: 3000px;
@@ -310,7 +311,7 @@ ul li.active {
     margin-left:auto;
     margin:0 auto;
     text-align: center;
-    box-shadow: 1px 1.5px 0 0 #ede5e5;
+    box-shadow: 0px 1px 0 0 #ede5e5;
 
 }
 
@@ -319,6 +320,7 @@ ul li.active {
     color: #fc0107; 
     margin-top: 5px
 }
+
 
 
 

@@ -28,6 +28,9 @@ Vue.component(Photo.name, Photo)
 
 import * as api from './restful/api'
 
+import './assets/css/global.css' // 引入全局的css 
+
+
 //挂载到vue原型上
 Vue.prototype.$https = api;
 

@@ -28,22 +28,22 @@ export default {
         {
           id: 1,
           metavalue:
-            "http://picture1.yidianchina.com/assets/upload/image/d426850409a28496d9fd486166a7445d.jpg"
+            "https://backend-frontend.oss-cn-beijing.aliyuncs.com/2038889.jpg"
         },
         {
           id: 2,
           metavalue:
-            "http://picture1.yidianchina.com/assets/upload/image/92e2ee2bcbc869ad7c986a5d896fa1aa.jpg"
+            "https://backend-frontend.oss-cn-beijing.aliyuncs.com/2042170.jpg"
         },
         {
           id: 3,
           metavalue:
-            "http://picture1.yidianchina.com/assets/upload/product/9cda594561df839876a2e61667a992db.jpg"
+            "https://backend-frontend.oss-cn-beijing.aliyuncs.com/2042482.jpg"
         },
         {
           id: 4,
           metavalue:
-            "http://picture1.yidianchina.com/assets/upload/image/c1974be488d8a8976f2f7e1c3c66140b.jpg"
+            "https://backend-frontend.oss-cn-beijing.aliyuncs.com/2032866.jpg"
         }
       ]
     };
